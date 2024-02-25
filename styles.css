@@ -1,4 +1,133 @@
+/* FONTS */
+/* BREE SERIF */
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* DM SANS */
+.dm-sans-extra-light {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.dm-sans-thin {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.dm-sans-light {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dm-sans-regular {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-sans-medium {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dm-sans-semibold {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dm-sans-bold {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dm-sans-extrabold {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.dm-sans-black {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ALL STYLING */
 body {
     display: flex;
-    background-color: lightblue;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0rem;
+    margin: 0rem;
+
+    background: linear-gradient(#14181c, #262d37);
+    color: #f4f5f6;
+}
+
+header {
+    width: 100%;
+    background-color: #202830;
+}
+
+section {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; */
+
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+    /* bree-serif-regular */
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 4rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+
+    /* .dm-sans-semibold */
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 1.5rem;
+    color: #99aabb;
+}
+
+/* ID STYLING */
+#navbar {
+    padding: 2rem;
+}
+
+#title {
+    background-color: blue;
 }
