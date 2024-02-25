@@ -117,7 +117,7 @@ h1 {
 }
 
 h2 {
-    /* .dm-sans-semibold */
+    /* dm-sans-semibold */
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -128,12 +128,38 @@ h2 {
 }
 
 h3 {
+    /* bree-serif-regular */
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 2rem;
 }
 
 h4 {
+    /* dm-sans-medium */
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1rem;
+    color: #99aabb;
 }
 
 p {
+    /* dm-sans-regular */
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #99aabb;
+    font-size: 1.25rem;
+}
+
+img {
+    object-fit: contain;
 }
 
 /* ID STYLING */
@@ -141,6 +167,54 @@ p {
     padding: 2rem;
 }
 
-#movie-title {
-    /* background-color: blue; */
+#title {
+    margin-bottom: 2rem;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-profile {
+    margin-right: 1rem;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+}
+
+#likes {
+    display: flex;
+    flex-direction: row;
+}
+
+#likes-icon {
+    margin-right: 0.5rem;
+}
+
+#review {
+    margin-bottom: 1rem;
+}
+
+#edit-icons {
+    text-align: right;
+}
+
+.likes-text {
+    /* bree-serif-regular */
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #99aabb;
+    font-size: 2.75rem;
 }
