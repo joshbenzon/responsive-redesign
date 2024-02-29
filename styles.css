@@ -269,6 +269,7 @@ img {
 
     padding: 1rem;
     padding-right: 5rem;
+    margin-bottom: 0.25rem;
 
     text-align: center;
     object-fit: cover;
@@ -349,7 +350,7 @@ img {
 }
 
 .user {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
 }
 
 .star {
@@ -400,8 +401,13 @@ img {
     /* background-size: 100% auto; */
     display: flex;
     justify-content: center;
-    height: 5rem;
-    width: 5rem;
+    height: 3.25rem;
+    width: 3.25rem;
+}
+
+.tablet {
+    display: none !important;
+    visibility: hidden;
 }
 
 /* MEDIA STYLING */
@@ -410,6 +416,63 @@ img {
 
     body {
         background: blue;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    section {
+        width: 100%;
+    }
+
+    #titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #key {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        /* background-color: aqua; */
+    }
+
+    .desktop {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .tablet {
+        display: block !important;
+        visibility: visible;
+    }
+
+    #main {
+        /* max-width: 95%;
+        justify-content: space-between;
+
+        padding: 2rem; */
+        /* background-color: green; */
+    }
+
+    #left-column {
+        /* background-color: purple; */
+        max-width: 100%;
+    }
+
+    #tags {
+        max-width: 9rem;
+    }
+
+    #right-column {
+        /* background-color: yellow; */
+        margin-left: 0rem;
     }
 }
 
