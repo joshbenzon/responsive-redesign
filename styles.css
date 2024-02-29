@@ -89,11 +89,6 @@ header {
 }
 
 section {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%; */
-
     padding: 1rem;
 }
 
@@ -198,6 +193,7 @@ img {
     flex-direction: column;
 
     max-width: 30%;
+    margin-left: 2rem;
 }
 
 #navbar {
@@ -247,6 +243,97 @@ img {
     margin-bottom: 2.5rem;
 }
 
+#tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    background-size: 100% auto;
+    margin: 0rem;
+    padding: 0rem;
+
+    margin-top: 2rem;
+}
+
+#tag {
+    /* bree-serif-regular */
+    background-size: 100% auto;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #99aabb;
+
+    background-image: url("./icons/Tag\ Icon.png");
+    background-repeat: no-repeat;
+
+    padding: 1rem;
+    padding-right: 5rem;
+
+    text-align: center;
+    object-fit: cover;
+}
+
+#poster {
+    background-size: 100% auto;
+    width: 100%;
+
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#visuals {
+    text-align: right;
+}
+
+#stars {
+    background-size: 100% auto;
+    margin-top: 0.75rem;
+}
+
+#movie-poster {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons {
+    /* display: inline-block;
+    text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin-top: 1rem;
+}
+
+#add-button {
+    background: url("./buttons/add-watchlist/Add\ Watchlist\ \(1\).png")
+        no-repeat;
+}
+
+#add-button:hover {
+    background: url("./buttons/add-watchlist/Add\ Watchlist\ \(2\).png")
+        no-repeat;
+}
+
+#add-button:active {
+    background: url("./buttons/add-watchlist/Add\ Watchlist\ \(3\).png")
+        no-repeat;
+}
+
+#play-button {
+    background: url("./buttons/play-movie/Play\ Movie\ \(1\).png") no-repeat;
+}
+
+#play-button:hover {
+    background: url("./buttons/play-movie/Play\ Movie\ \(2\).png") no-repeat;
+}
+
+#play-button:active {
+    background: url("./buttons/play-movie/Play\ Movie\ \(3\).png") no-repeat;
+}
+
+/* CLASS STYLING */
 .likes-text {
     /* bree-serif-regular */
     font-family: "Bree Serif", serif;
@@ -265,9 +352,9 @@ img {
     margin-bottom: 3rem;
 }
 
-/* https://codepen.io/fxm90/pen/yOBWVe */
 .star {
     position: relative;
+    background-size: 100% auto;
 
     display: inline-block;
     width: 0;
@@ -281,7 +368,7 @@ img {
     border-bottom: 0.7rem solid #05ac1d;
     border-left: 0.3rem solid transparent;
 
-    /* controlls the size of the stars. */
+    /* controls the size of the stars. */
     font-size: 1.5rem;
 
     &:before,
@@ -306,41 +393,30 @@ img {
     &:after {
         transform: rotate(35deg);
     }
-}
+} /* https://codepen.io/fxm90/pen/yOBWVe */
 
-#tags {
+.button {
+    /* position: relative; */
+    /* background-size: 100% auto; */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
 }
 
-#tag {
-    /* bree-serif-regular */
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+/* MEDIA STYLING */
+@media (max-width: 768px) {
+    /* TABLET */
 
-    color: #99aabb;
-
-    background-image: url("./icons/Tag\ Icon.png");
-    background-repeat: no-repeat;
-
-    padding: 1rem;
-    padding-right: 5rem;
-
-    text-align: center;
-    object-fit: cover;
+    body {
+        background: blue;
+    }
 }
 
-#movie-poster {
-    max-width: 80%;
-}
+@media (max-width: 375px) {
+    /* MOBILE */
 
-#visuals {
-    text-align: right;
-}
-
-#stars {
-    margin-top: 0.75rem;
+    body {
+        background: red;
+    }
 }
