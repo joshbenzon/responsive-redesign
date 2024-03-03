@@ -89,7 +89,7 @@ header {
 }
 
 section {
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 h1,
@@ -168,6 +168,11 @@ img {
 }
 
 /* ID STYLING */
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
 #main {
     display: flex;
     flex-direction: row;
@@ -370,7 +375,7 @@ img {
     border-left: 0.3rem solid transparent;
 
     /* controls the size of the stars. */
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 
     &:before,
     &:after {
@@ -415,7 +420,7 @@ img {
     /* TABLET */
 
     body {
-        background: blue;
+        /* background: blue; */
     }
 
     h1 {
@@ -476,10 +481,82 @@ img {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
     /* MOBILE */
 
+    #left-column {
+        width: 100%;
+    }
+
+    #key {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    #right-column {
+        max-width: 100%;
+        background-size: 100% auto;
+    }
+
+    #visuals {
+        flex-direction: row;
+        /* width: 325%; */
+        align-items: stretch;
+    }
+
+    #movie-poster {
+        width: 100%;
+    }
+
+    #poster {
+        width: 100%;
+    }
+
+    #logo {
+        width: 90%;
+    }
+
+    .desktop#tags {
+        display: block !important;
+        visibility: visible;
+    }
+
+    .tablet.mobile {
+        display: none !important;
+        visibility: hidden;
+    }
+
     body {
-        background: red;
+        /* background: red; */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 0.75rem;
+    }
+
+    h5 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .likes-text {
+        font-size: 2.5rem;
     }
 }
