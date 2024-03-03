@@ -1,4 +1,4 @@
-/* FONTS */
+/* Fonts */
 /* BREE SERIF */
 .bree-serif-regular {
     font-family: "Bree Serif", serif;
@@ -7,66 +7,18 @@
 }
 
 /* DM SANS */
-.dm-sans-extra-light {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.dm-sans-thin {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.dm-sans-light {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.dm-sans-regular {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.dm-sans-medium {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.dm-sans-semibold {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.dm-sans-bold {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.dm-sans-extrabold {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-}
-
+.dm-sans-extra-light,
+.dm-sans-thin,
+.dm-sans-light,
+.dm-sans-regular,
+.dm-sans-medium,
+.dm-sans-semibold,
+.dm-sans-bold,
+.dm-sans-extrabold,
 .dm-sans-black {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: var(--weight, 400);
     font-style: normal;
 }
 
@@ -100,14 +52,14 @@ h5,
 p {
     padding: 0rem;
     margin: 0rem;
-} /* removes default paddings and margins */
+    /* removes default paddings and margins */
+}
 
 h1 {
     /* bree-serif-regular */
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
-
     font-size: 4rem;
 }
 
@@ -117,7 +69,6 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-
     font-size: 1.5rem;
     color: #99aabb;
 }
@@ -127,7 +78,6 @@ h3 {
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
-
     font-size: 2rem;
 }
 
@@ -137,7 +87,6 @@ h4 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-
     font-size: 1rem;
     color: #99aabb;
 }
@@ -147,7 +96,6 @@ h5 {
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
-
     font-size: 1.75rem;
     padding-bottom: 0.25rem;
 }
@@ -158,7 +106,6 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
     color: #99aabb;
     font-size: 1.25rem;
 }
@@ -177,13 +124,13 @@ img {
     display: flex;
     flex-direction: row;
     align-content: center;
-
-    max-width: 80%;
     justify-content: center;
 
+    max-width: 80%;
     padding: 2rem;
-    margin: 0 auto !important;
-    float: none !important;
+
+    margin: 0 auto;
+    float: none;
 }
 
 #left-column {
@@ -213,7 +160,6 @@ img {
 #info {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 1.5rem;
 }
 
@@ -252,12 +198,13 @@ img {
 #tags {
     display: flex;
     flex-direction: row;
+
     flex-wrap: wrap;
     list-style: none;
     background-size: 100% auto;
+
     margin: 0rem;
     padding: 0rem;
-
     margin-top: 2rem;
 }
 
@@ -268,17 +215,16 @@ img {
     font-weight: 400;
     font-style: normal;
 
-    color: #99aabb;
+    text-align: center;
+    object-fit: cover;
 
+    color: #99aabb;
     background-image: url("./icons/Tag\ Icon.png");
     background-repeat: no-repeat;
 
     padding: 1rem;
     padding-right: 5rem;
     margin-bottom: 0.25rem;
-
-    text-align: center;
-    object-fit: cover;
 }
 
 #poster {
@@ -304,8 +250,6 @@ img {
 }
 
 #buttons {
-    /* display: inline-block;
-    text-align: center; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -362,8 +306,8 @@ img {
 .star {
     position: relative;
     background-size: 100% auto;
-
     display: inline-block;
+
     width: 0;
     height: 0;
 
@@ -381,7 +325,6 @@ img {
     &:before,
     &:after {
         content: "";
-
         display: block;
         width: 0;
         height: 0;
@@ -396,17 +339,15 @@ img {
 
         transform: rotate(-35deg);
     }
-
     &:after {
         transform: rotate(35deg);
     }
 } /* https://codepen.io/fxm90/pen/yOBWVe */
 
 .button {
-    /* position: relative; */
-    /* background-size: 100% auto; */
     display: flex;
     justify-content: center;
+
     height: 3.5rem;
     width: 3.5rem;
 }
@@ -423,11 +364,6 @@ img {
 /* MEDIA STYLING */
 @media (max-width: 768px) {
     /* TABLET */
-
-    body {
-        /* background: blue; */
-    }
-
     h1 {
         font-size: 3rem;
     }
@@ -446,13 +382,12 @@ img {
         justify-content: space-between;
         margin-right: 1rem;
     }
+
     #key {
         display: flex;
         flex-direction: row;
-
         justify-content: space-between;
         margin-bottom: 3rem;
-        /* background-color: aqua; */
     }
 
     .desktop {
@@ -466,7 +401,6 @@ img {
     }
 
     #left-column {
-        /* background-color: purple; */
         max-width: 100%;
         margin-right: 0rem;
     }
@@ -476,7 +410,6 @@ img {
     }
 
     #right-column {
-        /* background-color: yellow; */
         max-width: 45%;
         margin-left: 0rem;
     }
@@ -484,7 +417,6 @@ img {
 
 @media (max-width: 570px) {
     /* MOBILE */
-
     #left-column {
         max-width: 100%;
     }
@@ -492,7 +424,6 @@ img {
     #key {
         display: flex;
         flex-direction: column;
-
         width: 100%;
     }
 
@@ -503,7 +434,6 @@ img {
 
     #visuals {
         flex-direction: row;
-        /* width: 325%; */
         align-items: stretch;
     }
 
@@ -527,10 +457,6 @@ img {
     .tablet.mobile {
         display: none !important;
         visibility: hidden;
-    }
-
-    body {
-        /* background: red; */
     }
 
     h1 {

@@ -1,12 +1,12 @@
 <html lang="en">
     <head>
-        <!-- SETTINGS -->
+        <!-- Meta Information -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- FONTS -->
-        <!-- BREE SERIF -->
+        <!-- Font Styles -->
+        <!-- BREE SERIF Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
 
-        <!-- DM SANS -->
+        <!-- DM SANS Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -22,15 +22,15 @@
             rel="stylesheet"
         />
 
-        <!-- TITLE -->
+        <!-- Page Title -->
         <title>Responsive Redesign</title>
 
-        <!-- STYLING -->
+        <!-- CSS Styling -->
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-        <!-- HEADER -->
+        <!-- HEADER Section -->
         <header>
             <div aria-label="navbar" id="navbar">
                 <img
@@ -42,62 +42,74 @@
             </div>
         </header>
 
+        <!-- Main Content Section -->
         <div id="main">
-            <!-- LEFT COLUMN -->
+            <!-- LEFT COLUMN Section -->
             <div id="left-column">
-                <!-- TITLE SECTION -->
+                <!-- TITLES SECTION -->
                 <section id="key">
                     <div id="titles">
-                        <div aria-label="title" id="title">
+                        <div aria-label="titles" id="title">
                             <h1 aria-label="movie title">Turning Red</h1>
                             <h2 aria-label="movie date">2022</h2>
                         </div>
 
-                        <ul class="tablet mobile" id="tags">
-                            <li id="tag">disney</li>
-                            <li id="tag">family</li>
-                            <li id="tag">cutesy</li>
+                        <ul class="tablet mobile" aria-label="tags" id="tags">
+                            <li aria-label="tag" id="tag">disney</li>
+                            <li aria-label="tag" id="tag">family</li>
+                            <li aria-label="tag" id="tag">cutesy</li>
                         </ul>
                     </div>
 
+                    <!-- RIGHT COLUMN for Tablets and Mobiles -->
                     <div class="tablet" id="right-column">
                         <div id="visuals">
                             <div id="movie-poster">
                                 <img
+                                    aria-label="movie poster"
                                     id="poster"
                                     src="./images/Movie Poster.png"
                                     alt="Turning Red movie poster"
                                 />
                             </div>
 
-                            <div id="stars">
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
-                                <i class="star"></i>
+                            <div aria-label="movie ratings" id="stars">
+                                <i aria-label="star" class="star"></i>
+                                <i aria-label="star" class="star"></i>
+                                <i aria-label="star" class="star"></i>
+                                <i aria-label="star" class="star"></i>
+                                <i aria-label="star" class="star"></i>
                             </div>
 
-                            <div id="buttons">
-                                <div class="button" id="add-button"></div>
-                                <div class="button" id="play-button"></div>
+                            <div aria-label="action buttons" id="buttons">
+                                <div
+                                    aria-label="add button"
+                                    class="button"
+                                    id="add-button"
+                                ></div>
+                                <div
+                                    aria-label="play button"
+                                    class="button"
+                                    id="play-button"
+                                ></div>
                             </div>
 
-                            <ul class="desktop" id="tags">
-                                <li id="tag">disney</li>
-                                <li id="tag">family</li>
-                                <li id="tag">cutesy</li>
+                            <ul class="desktop" aria-label="tags" id="tags">
+                                <li aria-label="tag" id="tag">disney</li>
+                                <li aria-label="tag" id="tag">family</li>
+                                <li aria-label="tag" id="tag">cutesy</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <!-- USER SECTION -->
+                <!-- MAIN USER SECTION -->
                 <section>
                     <div aria-label="main user" class="user" id="main-user">
                         <div id="info">
                             <div id="profile">
                                 <img
+                                    aria-label="main user profile"
                                     class="profile-pics"
                                     id="main-profile"
                                     src="./images/MainUser Pic.png"
@@ -105,23 +117,29 @@
                                 />
 
                                 <div id="names">
-                                    <h3>Josh</h3>
-                                    <h4>Rewatched Feb 16, 2024</h4>
+                                    <h3 aria-label="main user name">Josh</h3>
+                                    <h4 aria-label="review date">
+                                        Rewatched Feb 16, 2024
+                                    </h4>
                                 </div>
                             </div>
 
                             <div id="likes">
                                 <img
+                                    aria-label="likes icon"
                                     id="likes-icon"
                                     src="./icons/Heart Icon.png"
                                     alt="Heart icon for likes"
                                 />
 
-                                <p class="likes-text">13</p>
+                                <p class="likes-text" aria-label="likes count">
+                                    13
+                                </p>
                             </div>
                         </div>
 
-                        <div id="review">
+                        <div aria-label="main user review content" id="review">
+                            <!-- Main User Review Content -->
                             <p>
                                 Upon revisiting this, I found myself captivated
                                 once again. The emotional depth in the mother
@@ -143,19 +161,23 @@
                             </p>
                         </div>
 
-                        <div id="editing">
+                        <div id="editing" aria-label="review editing section">
                             <div id="edit-icons">
+                                <!-- Edit Icons for Main User Review -->
                                 <img
+                                    aria-label="edit icon"
                                     src="/icons/Edit Icon.png"
                                     alt="Pencil icon for editing reviews"
                                 />
 
                                 <img
+                                    aria-label="share icon"
                                     src="/icons/Share Icon.png"
                                     alt="Share icon for sharing reviews"
                                 />
 
                                 <img
+                                    aria-label="delete icon"
                                     src="/icons/Delete Icon.png"
                                     alt="Trash icon for deleting reviews"
                                 />
@@ -164,40 +186,51 @@
                     </div>
                 </section>
 
+                <!-- COMMENTS Section for Sub Users -->
                 <section>
-                    <div id="comments">
+                    <div aria-label="comments section" id="comments">
                         <h5>3 Comments</h5>
                     </div>
 
                     <!-- SubUser #1 -->
-                    <div aria-label="sub user" class="user" id="sub-user">
+                    <div
+                        aria-label="sub user 1 section"
+                        class="user"
+                        id="sub-user"
+                    >
                         <div id="info">
                             <div id="profile">
                                 <img
+                                    alt="sub user profile"
                                     class="profile-pics"
                                     id="sub-profile"
                                     src="./images/SubUser Pic.png"
-                                    alt="Sub user profile picture"
                                 />
 
                                 <div id="names">
-                                    <h3>Nina</h3>
-                                    <h4>Commented Feb 8, 2024</h4>
+                                    <h3 aria-label="sub sser name">Nina</h3>
+                                    <h4 aria-label="comment date">
+                                        Commented Feb 8, 2024
+                                    </h4>
                                 </div>
                             </div>
 
                             <div id="likes">
                                 <img
+                                    aria-label="likes icon"
                                     id="likes-icon"
                                     src="./icons/Heart Icon.png"
                                     alt="Heart icon for likes"
                                 />
 
-                                <p class="likes-text">11</p>
+                                <p class="likes-text" aria-label="likes count">
+                                    11
+                                </p>
                             </div>
                         </div>
 
-                        <div id="review">
+                        <div id="review" aria-label="sub user 1 review content">
+                            <!-- SubUser #1 Review Content -->
                             <p>
                                 The film brilliantly captures the essence of an
                                 Asian household. The cultural nuances are
@@ -209,34 +242,44 @@
                     </div>
 
                     <!-- SubUser #2 -->
-                    <div aria-label="sub user" class="user" id="sub-user">
+                    <div
+                        aria-label="sub user 2 section"
+                        class="user"
+                        id="sub-user"
+                    >
                         <div id="info">
                             <div id="profile">
                                 <img
+                                    alt="sub user profile"
                                     class="profile-pics"
                                     id="sub-profile"
                                     src="./images/SubUser Pic.png"
-                                    alt="Sub user profile picture"
                                 />
 
                                 <div id="names">
-                                    <h3>Mei</h3>
-                                    <h4>Commented Feb 8, 2024</h4>
+                                    <h3 aria-label="user name">Mei</h3>
+                                    <h4 aria-label="comment date">
+                                        Commented Feb 8, 2024
+                                    </h4>
                                 </div>
                             </div>
 
                             <div id="likes">
                                 <img
+                                    aria-label="likes icon"
                                     id="likes-icon"
                                     src="./icons/Heart Icon.png"
                                     alt="Heart icon for likes"
                                 />
 
-                                <p class="likes-text">11</p>
+                                <p class="likes-text" aria-label="likes count">
+                                    11
+                                </p>
                             </div>
                         </div>
 
-                        <div id="review">
+                        <div id="review" aria-label="sub user 2 review content">
+                            <!-- SubUser #2 Review Content -->
                             <p>
                                 Half a star off for some overly animated faces,
                                 but truth be told, most of them contribute to
@@ -248,34 +291,44 @@
                     </div>
 
                     <!-- SubUser #3 -->
-                    <div aria-label="sub user" class="user" id="sub-user">
+                    <div
+                        aria-label="sub user 3 section"
+                        class="user"
+                        id="sub-user"
+                    >
                         <div id="info">
                             <div id="profile">
                                 <img
+                                    alt="sub user profile "
                                     class="profile-pics"
                                     id="sub-profile"
                                     src="./images/SubUser Pic.png"
-                                    alt="Sub user profile picture"
                                 />
 
                                 <div id="names">
-                                    <h3>Nova</h3>
-                                    <h4>Commented Feb 8, 2024</h4>
+                                    <h3 aria-label="user name">Nova</h3>
+                                    <h4 aria-label="comment date">
+                                        Commented Feb 8, 2024
+                                    </h4>
                                 </div>
                             </div>
 
                             <div id="likes">
                                 <img
+                                    aria-label="likes icon"
                                     id="likes-icon"
                                     src="./icons/Heart Icon.png"
                                     alt="Heart icon for likes"
                                 />
 
-                                <p class="likes-text">11</p>
+                                <p class="likes-text" aria-label="likes count">
+                                    11
+                                </p>
                             </div>
                         </div>
 
-                        <div id="review">
+                        <div id="review" aria-label="sub user 3 review content">
+                            <!-- SubUser #3 Review Content -->
                             <p>
                                 The bamboo scene is a visual marvel, offering a
                                 dreamlike sequence that stays with you. It's a
@@ -288,35 +341,44 @@
                 </section>
             </div>
 
-            <!-- RIGHT COLUMN -->
+            <!-- RIGHT COLUMN for Desktops -->
             <div class="desktop" id="right-column">
                 <section>
                     <div id="visuals">
                         <div id="movie-poster">
                             <img
+                                aria-label="movie poster"
                                 id="poster"
                                 src="./images/Movie Poster.png"
                                 alt="Turning Red movie poster"
                             />
                         </div>
 
-                        <div id="stars">
-                            <i class="star"></i>
-                            <i class="star"></i>
-                            <i class="star"></i>
-                            <i class="star"></i>
-                            <i class="star"></i>
+                        <div id="stars" aria-label="movie ratings">
+                            <i aria-label="star" class="star"></i>
+                            <i aria-label="star" class="star"></i>
+                            <i aria-label="star" class="star"></i>
+                            <i aria-label="star" class="star"></i>
+                            <i aria-label="star" class="star"></i>
                         </div>
 
-                        <div id="buttons">
-                            <div class="button" id="add-button"></div>
-                            <div class="button" id="play-button"></div>
+                        <div id="buttons" aria-label="action buttons">
+                            <div
+                                aria-label="add button"
+                                class="button"
+                                id="add-button"
+                            ></div>
+                            <div
+                                aria-label="play button"
+                                class="button"
+                                id="play-button"
+                            ></div>
                         </div>
 
-                        <ul class="desktop" id="tags">
-                            <li id="tag">disney</li>
-                            <li id="tag">family</li>
-                            <li id="tag">cutesy</li>
+                        <ul class="desktop" aria-label="tags" id="tags">
+                            <li aria-label="tag" id="tag">disney</li>
+                            <li aria-label="tag" id="tag">family</li>
+                            <li aria-label="tag" id="tag">cutesy</li>
                         </ul>
                     </div>
                 </section>
