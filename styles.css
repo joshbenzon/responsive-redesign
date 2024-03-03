@@ -89,7 +89,7 @@ header {
 }
 
 section {
-    /* padding: 1rem; */
+    margin-top: 1.25rem;
 }
 
 h1,
@@ -190,7 +190,8 @@ img {
     display: flex;
     flex-direction: column;
 
-    max-width: 70%;
+    max-width: 65%;
+    margin-right: 4rem;
 }
 
 #right-column {
@@ -406,13 +407,17 @@ img {
     /* background-size: 100% auto; */
     display: flex;
     justify-content: center;
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .tablet {
     display: none !important;
     visibility: hidden;
+}
+
+#main-user {
+    margin-top: 1.5rem;
 }
 
 /* MEDIA STYLING */
@@ -430,6 +435,7 @@ img {
     h2 {
         font-size: 1.25rem;
     }
+
     section {
         width: 100%;
     }
@@ -438,6 +444,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 1rem;
     }
     #key {
         display: flex;
@@ -458,17 +465,10 @@ img {
         visibility: visible;
     }
 
-    #main {
-        /* max-width: 95%;
-        justify-content: space-between;
-
-        padding: 2rem; */
-        /* background-color: green; */
-    }
-
     #left-column {
         /* background-color: purple; */
         max-width: 100%;
+        margin-right: 0rem;
     }
 
     #tags {
@@ -477,15 +477,16 @@ img {
 
     #right-column {
         /* background-color: yellow; */
+        max-width: 45%;
         margin-left: 0rem;
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 570px) {
     /* MOBILE */
 
     #left-column {
-        width: 100%;
+        max-width: 100%;
     }
 
     #key {
@@ -553,7 +554,7 @@ img {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     .likes-text {
