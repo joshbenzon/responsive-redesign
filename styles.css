@@ -257,6 +257,10 @@ img {
     margin-top: 1rem;
 }
 
+#main-user {
+    margin-top: 1.5rem;
+}
+
 #add-button {
     background: url("./buttons/add-watchlist/Add\ Watchlist\ \(1\).png")
         no-repeat;
@@ -357,13 +361,9 @@ img {
     visibility: hidden;
 }
 
-#main-user {
-    margin-top: 1.5rem;
-}
-
-/* MEDIA STYLING */
+/* Media Styling */
+/* TABLET */
 @media (max-width: 768px) {
-    /* TABLET */
     h1 {
         font-size: 3rem;
     }
@@ -415,8 +415,8 @@ img {
     }
 }
 
+/* MOBILE */
 @media (max-width: 570px) {
-    /* MOBILE */
     #left-column {
         max-width: 100%;
     }
